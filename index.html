@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script defer src="./public/js/activePage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./public/js/carousel.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <section id="main">
+        <nav>
+            <div class="container">
+                <a href="#main"><img class="logo" src="./public/img/logo.png" alt="logo-text"></a>
+            </div>
+            <ul class="menu" id="navBar">
+                <li><a class="btn" href="#main">Home</a></li>
+                <li><a class="btn" href="#about-me">About Me</a></li>
+                <li><a class="btn" href="#skills">Skills</a></li>
+                <li><a class="btn" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="content">
+        <div class="my-picture">
+            <img src="./public/img/profile-img.png" alt="">
+        </div>
+        <div class="main-text" id="learn-more-btn">
+            <h1>Hi, I am Earnie</h1>
+            <p>Bachelor of Science in Information Technology student in Bukidnon State University.</p>
+            <a href="#about-me" class="about-btn active">Learn More</a>
+        </div>
+    </div>
+    <section id="about-me">
+        <div class="about-me-text">
+            <div class="about-me-heading">
+                <span>My Story</span>
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <p>I am Earnie M. Actub, fourth year Information Technology student in Bukidnon State University. I am creative and hardworking individual, with skills in web development. Furthermore, I am adept at handling multiple tasks on a daily basis compentently and at working well under pressure. A key strength of mine is my communication skills, building strong relationships with people in order to deliver the best results.</p>
+            </div>
+        </div>
+        <div class="about-me-img">
+            <img src="./public/img/about-me.jpg" alt="about-me">
+        </div>    
+    </section>
+   
+    <section id="skills">
+        <div class="skills-img">
+            <img src="./public//img/skills.jpg" alt="">
+        </div>    
+        <div class="s-box-container">
+            <div class="skill-heading">
+                <span>My Skills</span>
+                <h2>My Experties</h2>
+            </div>
+            <div class="skill-box">
+                <div class="s-box-icon">
+                    <img class="node" src="./public/img/node.png" alt="">
+                </div>
+                <div class="s-box-text">
+                    <strong>Node.js</strong>
+                    <p>I use Node.js framework for building server-side applications. </p>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="s-box-icon">
+                    <img class="mongodb" src="./public/img/mongodb.png" alt="">
+                </div>
+                <div class="s-box-text">
+                    <strong>MongoDB</strong>
+                    <p>I use MongoDB as the database for my web-applications.</p>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="s-box-icon">
+                    <img class="html" src="./public/img/html.png" alt="">
+                </div>
+                <div class="s-box-text">
+                    <strong>HTML</strong>
+                    <p>I use HTML for the Front-End Development of my web-applications.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="s-box-icon">
+                        <img class="css" src="./public/img/css.png" alt="">
+                    </div>
+                    <div class="s-box-text">
+                        <strong>CSS</strong>
+                        <p>I use CSS for styling all of my web-applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="s-box-icon">
+                    <img class= "js" src="./public/img/js.png" alt="">
+                </div>
+                <div class="s-box-text">
+                    <strong>JavaScript</strong>
+                    <p>I use JavaScript to create dynamic functions in web-applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="header">
+            <span>My Portfolio</span>
+            <h2>My Projects</h2>
+        </div>
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./public/img/crs.png" alt=""></div>
+            <div class="swiper-slide"><img src="./public/img/sms.png" alt="">/div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    </section>
+    <footer>
+        <p>Internet Of Things, Ltd Consumer Website</p>
+        <p>Copyright 2022 - InternetOfThings<small>&copy;</small></p>
+    </footer> 
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+    
+    pagination: {
+        el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
+</body>
+</html>
